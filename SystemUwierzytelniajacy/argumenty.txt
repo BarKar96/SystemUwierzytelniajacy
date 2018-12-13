@@ -1,0 +1,7 @@
+embeddings
+
+"--dataset" "dataset" "--embeddings" "output/embeddings.pickle"	"--detector" "face_detection_model" "--embedding-model" "openface_nn4.small2.v1.t7"
+
+train
+
+"--embeddings" "output/embeddings.pickle" "--recognizer" "output/recognizer.pickle" "--le output/le.pickle"
