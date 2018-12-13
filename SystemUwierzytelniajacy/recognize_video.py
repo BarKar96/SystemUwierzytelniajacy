@@ -296,7 +296,7 @@ class RecognizerPage(tk.Frame):
 
         #print("rozpoznano na " + str(self.master.maxConfidence) + "% " + self.master.recognizedPerson)
 
-        if (self.master.maxConfidence*100) > 40 and (self.master.maxConfidence*100) < 80:
+        if (self.master.maxConfidence*100) > 40 and (self.master.maxConfidence*100) < 85:
             print("rozpoznano na " + str(self.master.maxConfidence) +"%")
             self.switchBetweenScenes(AuthPage)
         else:

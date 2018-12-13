@@ -14,10 +14,8 @@ auth = firebase.auth()
 
 
 
-def createClient():
-    user = None
-    email = input("input email")
-    password = input("input password")
+def createClient(email, password):
+
     try :
         user = auth.create_user_with_email_and_password(email,password)
     except Exception as e:
